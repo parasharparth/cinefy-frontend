@@ -14,18 +14,14 @@ class homepage extends Component{
     //The features to be added are: - recommended movies, entertainment, premier movies, outdoorevents, laughter events, popular events, latest events
     render(){
         return (
-            <div style={{ backgroundColor: "#F2F5F9" }}>
-            <AddCarousel />
-            <RecommendedMovies />
-            <Entertainment />
-            <PremierMovies />
-            <OutdoorEvents />
-            <div style={{ backgroundColor: "#F2F2F2" }}>
-                <LaughterEvents />
-                <PopularEvents />
-                <LatestEvents />
+            <div>
+            <div style={{ fontSize: '20px', width:'300px', margin:'auto' }}>Movies</div>
+
+            <div style={{ fontSize: '20px', width:'300px', margin:'auto' }}> Featured Films </div>
+         
+
             </div>
-        </div>
+            
         )
     }
 }

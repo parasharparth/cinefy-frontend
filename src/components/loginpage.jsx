@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
 
 class loginpage extends Component{
-    contructor(props){
-        super(props)
-
-        this.state = {
-                loginInfo: []
-        }
-    }
+    
 
     //This is the login page from where the user will login using username and password
     render(){
@@ -25,9 +19,7 @@ class loginpage extends Component{
             </div>
 
             <div>
-            <Button autoFocus onClick={()=>handleLogin(username,password)} color="primary">
-            Sign in
-            </Button>
+            
             </div>
             </div>
             

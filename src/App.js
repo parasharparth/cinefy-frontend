@@ -1,11 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import Appbar from './components/AppBar';
+import Home from './components/Homepage/Home';
+// import Movie from './components/Homepage/Movie';
 
 function App() {
   return (
     <div className="App">
-    <Appbar/> 
+     <Home/>
     </div>
 
   );

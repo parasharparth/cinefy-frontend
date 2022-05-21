@@ -11,7 +11,7 @@ function App() {
     <div className="App"> 
      <Router>
        <Header/>
-      <Home />
+      <About />
       <Footer/>
       <Routes>
         <Route path="/" component={Home} />

@@ -18,8 +18,7 @@ const Home = () => {
   }, [])
 
   return (
-    <div>
-     
+    <div>    
         <div>
             <p>CINEFY</p>
           {movies.map(movie => (

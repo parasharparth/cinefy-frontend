@@ -36,3 +36,135 @@
     transform: rotate(360deg);
   }
 }
+
+#header {
+  position: absolute;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  text-decoration: none;
+
+  height: 80px;
+
+  border-bottom: #fff;
+
+  background: rgba(0, 0, 0, 0.6);
+}
+nav .logo {
+  padding: 12px 20px;
+  height: 80px;
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: cadetblue;
+  text-decoration: none;
+}
+nav ul {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-decoration: none;
+}
+
+nav ul li a {
+  line-height: 80px;
+  color: cadetblue;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  list-style: none;
+}
+nav ul li a:hover {
+  background: cadetblue;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul li a:active {
+  text-decoration: none;
+}
+.image-list {
+  margin: 20px;
+  width: 100vw;
+
+  padding-right: 0px;
+  margin-right: 0;
+  margin-top: 60px;
+  margin-left: 8px;
+}
+.grid-container {
+  padding-top: 78px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+  margin-left: 15%;
+  width: 75%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.about-background {
+  color: cadetblue;
+  font-size: 24px;
+}
+#header .rightSide button {
+  display: none;
+}
+
+#header .rightSide #hidden {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  #header .rightSide button {
+    display: flex;
+    float: right;
+    margin: 20px;
+    margin-top: 24px;
+    margin-right: 10px;
+  }
+
+  #header .rightSide .navbar-links {
+    display: none;
+  }
+
+  #header .rightSide #hidden {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    height: 230px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 190px;
+  }
+
+  #header .rightSide #hidden a {
+    margin: -20px;
+  }
+
+  .content {
+    justify-content: left;
+    margin-top: -230px;
+    background-color: white;
+    width: 60%;
+    height: 30%;
+    padding: 20px;
+  }
+  button {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    color: cadetblue;
+  }
+
+}
+

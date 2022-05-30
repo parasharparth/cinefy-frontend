@@ -30,6 +30,19 @@ function Nav() {
               </a>
             </li>
           </Link>
+          <Link to="/Payment">
+            <li>
+              <a
+                  id="gallery-page"
+                  onClick={closeHamburger}
+                  class="active"
+                  href="/Payment"
+                  data-after="Gallery"
+              >
+                Payment
+              </a>
+            </li>
+          </Link>
           {/* <Link to="/activities">
             <li id="activityLink">
               <a

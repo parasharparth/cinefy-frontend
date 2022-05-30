@@ -43,19 +43,6 @@ function Nav() {
               </a>
             </li>
           </Link>
-          {/* <Link to="/activities">
-            <li id="activityLink">
-              <a
-                class="active"
-                onClick={closeHamburger}
-                id="activities-page"
-                href=""
-                data-after="Activities"
-              >
-                Activities
-              </a>
-            </li>
-          </Link> */}
           <Link to="/bookings">
             <li>
               <a

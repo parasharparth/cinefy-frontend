@@ -11,9 +11,9 @@ function App() {
   return (
    
      <Router>
-       <Nav/>
+      <Nav/>
       <Switch>
-
+      
         <Route path="/bookings" component={Bookings} />
         <Route path="/about" component={About} />
         <Route path="/" component={Home} />

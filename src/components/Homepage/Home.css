@@ -1,0 +1,9 @@
+#name{
+    display: inline-block;
+    height: 100%;
+    margin: 10% auto;
+    text-align: center;
+    float: left;
+    clear: both;
+    color: #2779AA;
+}

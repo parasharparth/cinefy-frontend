@@ -7,6 +7,7 @@ const Bookings=()=>{
             <div id="form">
                 <form id="book_tickets">
                     <fieldset>
+
                         <legend>Booking Details</legend>
 
                         <p>
@@ -31,8 +32,8 @@ const Bookings=()=>{
 
                         <p>
                             <label htmlFor="date">Date<br/><span
-                                id="dateNote"> <a
-                                href="https://support.mozilla.org/en-US/questions/986096"></a>.</span></label>
+                                id="dateNote"> 
+                                <a href="https://support.mozilla.org/en-US/questions/986096"></a></span></label>
                             <input type="date" name="date" id="date" min="today" required/>
                         </p>
 
@@ -56,13 +57,13 @@ const Bookings=()=>{
                     </fieldset>
                 </form>
                 <p id="perTicketPrice">Per ticket price = $10</p>
-                <p id="discount">
+                {/* <p id="discount">
                     <span id="disount_title">Discounts:</span>
                     <ul>
                         <li>5% discount if show is on weekday</li>
                         <li>10% discount if number of tickets >= 10</li>
                     </ul>
-                </p>
+                </p> */}
             </div>
         </div>
     );

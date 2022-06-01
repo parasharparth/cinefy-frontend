@@ -46,7 +46,7 @@ const Payment=()=>{
                             <div>
                                 <div style={{fontSize:'20px', color:'darkolivegreen'}}>CVV</div>
                                 <div>
-                                    < input style={{width:"50px"}} type="text" placeholder="CVV"  value="933"/>
+                                    < input style={{width:"50px",textAlign:'center',}} type="text" placeholder="CVV"  value="933"/>
                                 </div>
                             </div>
                         </p>

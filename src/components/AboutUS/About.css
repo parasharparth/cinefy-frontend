@@ -10,7 +10,8 @@ body{
 #About{
     text-align: center;
     position: relative;
-    height: 50%;
+
+    height: 50
     color: white;
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */

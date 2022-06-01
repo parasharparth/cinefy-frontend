@@ -10,5 +10,9 @@ body{
 #About{
     text-align: center;
     position: relative;
-    height: 100%;
+    height: 50%;
+    color: white;
+}
+.h3{
+    color: white; 
 }

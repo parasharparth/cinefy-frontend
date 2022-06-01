@@ -19,8 +19,10 @@ return (
             </div>
           </div>
         </div>
+        
         <div className="row">
-          <div className="col-md-4 col-lg-4 col-sm-12">
+          <div className="column">
+       
             <div className="max-auto card " style={{height: "30em"}}>
               <div className="card-img">
                 <img src={pic3} id="image3" className="img-fluid" alt="Profilepicture" style={{height: "15em"}} />
@@ -31,9 +33,10 @@ return (
               <div className="card-footer">
                 <a href="https://github.com/Kirtan6004" className="card-link">GITHUB</a>
               </div>
-            </div>
+
           </div>
-          <div className="col-md-4 col-lg-4 col-sm-12">
+          </div>
+          <div className="column">
             <div className="max-auto card" style={{height: "30em"}}>
               <div className="card-img">
                 <img src={pic2} id="image2" className="img-fluid" alt="Profilepicture" style={{height: "15em"}}/>
@@ -46,7 +49,7 @@ return (
               </div>
             </div>
           </div>
-          <div className="col-md-4 col-lg-4 col-sm-12">
+          <div classname="column">
             <div className="max-auto card" style={{height: "30em"}}>
               <div className="card-img">
                 <img src={pic1} id="image1" className="img-fluid" alt="Profilepicture" style={{height: "15em"}} />
@@ -60,7 +63,7 @@ return (
             </div>
           </div>
         </div>
-    </div>
+        </div>
   );
 
 }

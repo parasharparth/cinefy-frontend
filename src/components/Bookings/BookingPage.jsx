@@ -13,7 +13,7 @@ const Bookings=()=>{
                         <p>
                             <label htmlFor="movie_name">Movie</label>
                             <select id="movie_name" name="movie_name" required autoFocus>
-                                <option></option>
+                                <option>Select Movie</option>
                                 <option value="Movie 1">Thor</option>
                                 <option value="Movie 2">Black</option>
                                 <option value="Movie 3">83</option>
@@ -23,7 +23,7 @@ const Bookings=()=>{
                         <p>
                             <label htmlFor="theaters">Theaters</label>
                             <select id="theaters" required>
-                                <option></option>
+                                <option>Select Theatre</option>
                                 <option value="Theater 1">Cinemax Cedar Hills</option>
                                 <option value="Theater 2">AMC Progressive ridge</option>
                                 <option value="Theater 3">Regal theatre Pioneer square</option>

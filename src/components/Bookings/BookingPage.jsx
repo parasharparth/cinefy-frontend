@@ -57,17 +57,10 @@ const Bookings=()=>{
                     </fieldset>
                 </form>
                 <p id="perTicketPrice">Per ticket price = $10</p>
-                {/* <p id="discount">
-                    <span id="disount_title">Discounts:</span>
-                    <ul>
-                        <li>5% discount if show is on weekday</li>
-                        <li>10% discount if number of tickets >= 10</li>
-                    </ul>
-                </p> */}
             </div>
         </div>
-    );
+    )
 
-}
+};
 
 export default Bookings;

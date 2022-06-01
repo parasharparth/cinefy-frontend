@@ -5,6 +5,7 @@ import About from './components/AboutUS/About';
 
 import Nav from './components/Header';
 import Footer from './components/Footer';
+import Payment from './components/Payment/PaymentsPage';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
@@ -15,7 +16,8 @@ function App() {
       <Switch>
       
         <Route path="/bookings" component={Bookings} />
-        <Route path="/about" component={About} />
+        <Route path="/about" component={About} />   
+        <Route path="/payment" component={Payment} />
         <Route path="/" component={Home} />
       </Switch>   
     </Router>

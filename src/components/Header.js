@@ -30,19 +30,7 @@ function Nav() {
               </a>
             </li>
           </Link>
-          <Link to="/Payment">
-            <li>
-              <a
-                  id="gallery-page"
-                  onClick={closeHamburger}
-                  class="active"
-                  href="/Payment"
-                  data-after="Gallery"
-              >
-                Payment
-              </a>
-            </li>
-          </Link>
+         
           <Link to="/bookings">
             <li>
               <a
@@ -53,6 +41,19 @@ function Nav() {
                 data-after="Gallery"
               >
                 Bookings
+              </a>
+            </li>
+          </Link>
+          <Link to="/payment">
+            <li>
+              <a
+                  id="payment"
+                  onClick={closeHamburger}
+                  class="active"
+                  href="/payment"
+                  data-after="Gallery"
+              >
+                Payment
               </a>
             </li>
           </Link>

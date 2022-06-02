@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# CineFy 
+Find your Cinema  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Are you a movie fanatic? An online platform to help you locate and book a movie of your choice!!!
+Cinefy will be meant for entertainment purpose. User will be able to book movie tickets by choosing different theaters and timings.
+
+This is the frontend repository.
+
+Tech stack of our project:
+SpringBoot
+React
+JS
+Html/css
+Docker
+MySql
+
+To run the project:
 
 ## Available Scripts
 

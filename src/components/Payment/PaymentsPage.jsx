@@ -12,18 +12,18 @@ const Payment=()=>{
 
                     
                         <p>
-                            <div style={{background:'white',fontSize:'20px'}}>Your total is for $$</div>
+                            <div style={{background:'black',fontSize:'20px', color:'white'}}>Total amount is: 10$</div>
                         </p>
                         <p>
-                            <div style={{background:'white',fontSize:'20px'}}>Payment options</div>
+                            <div style={{background:'grey',fontSize:'20px', color:'white'}}>Payment options</div>
                         </p>
                         <p>
-                            <div style={{background:'white'}}> Credit / Debit card</div>
+                            <div style={{background:'grey', fontSize:'20px', color:'white'}}> Credit / Debit card</div>
 
                         </p>
 
                         <p>
-                            <div style={{fontSize:'20px', color:'darkolivegreen'}}>Enter your card details</div>
+                            {/* <div style={{fontSize:'20px', color:'darkolivegreen'}}>Enter your card details</div> */}
 
                             <label style={{fontSize:'20px'}} htmlFor="Card number">Card number</label>
                             <input style={{fontSize:'20px'}}type="contact number" name="Card number" id="Card number" required placeholder="xxxx xxxx xxxx xxxx"/>
@@ -42,7 +42,7 @@ const Payment=()=>{
                         </p>
                         <legend>Customer Details</legend>
                         <p>
-                            <label style={{fontSize:'20px'}} htmlFor="contact number">contact number</label>
+                            <label style={{fontSize:'20px'}} htmlFor="contact number">Contact Number</label>
                             <input style={{fontSize:'20px'}} type="contact number" name="contact number" id="contact number" required/>
 
                             <label style={{fontSize:'20px'}} htmlFor="Address">Address</label>

@@ -25,13 +25,15 @@ return (
        
             <div className="max-auto card " style={{height: "30em"}}>
               <div className="card-img">
-                <img src={pic3} id="image3" className="img-fluid" alt="Profilepicture" style={{height: "15em"}} />
+              <a href="https://github.com/Kirtan6004">
+                <img src={pic3} id="image3" className="img-fluid" alt="Profilepicture" style={{height: "60em"}} />
+                </a>
               </div>
               <div className="card-body">
-                <h3>Kirtan Patel</h3>
+                {/* <h3>Kirtan Patel</h3> */}
                   </div>
               <div className="card-footer">
-                <a href="https://github.com/Kirtan6004" className="card-link">GITHUB</a>
+                {/* <a href="https://github.com/Kirtan6004" className="card-link">GITHUB</a> */}
               </div>
 
           </div>
@@ -39,30 +41,36 @@ return (
           <div className="column">
             <div className="max-auto card" style={{height: "30em"}}>
               <div className="card-img">
-                <img src={pic2} id="image2" className="img-fluid" alt="Profilepicture" style={{height: "15em"}}/>
+              <a href="https://github.com/pragatipdx">
+                <img src={pic2} id="image2" className="img-fluid" alt="Profilepicture" style={{height: "60em"}}/>
+                </a>
               </div>
               <div className="card-body">
-                <h3>Pragati Rathore</h3>
+                {/* <h3>Pragati Rathore</h3> */}
               </div>
               <div className="card-footer">
-                <a href="https://github.com/pragatipdx" className="card-link">GITHUB</a>
+                {/* <a href="https://github.com/pragatipdx" className="card-link">GITHUB</a> */}
               </div>
             </div>
           </div>
           <div classname="column">
-            <div className="max-auto card" style={{height: "30em"}}>
+            <div className="max-auto card" style={{height: "15em"}}>
               <div className="card-img">
-                <img src={pic1} id="image1" className="img-fluid" alt="Profilepicture" style={{height: "15em"}} />
+              <a href="https://github.com/parasharparth">
+                <img src={pic1} id="image1" className="img-fluid" alt="Profilepicture" style={{height: "60em" , width:""}} />
+                </a>
               </div>
               <div className="card-body">
-                <h3>Parth Parashar</h3>
+                {/* <h3>Parth Parashar</h3> */}
               </div>
               <div className="card-footer">
-                <a href="https://github.com/parasharparth" className="card-link">GITHUB</a>
+                {/* <a href="https://github.com/parasharparth" className="card-link">GITHUB</a> */}
               </div>
             </div>
           </div>
         </div>
+
+        
         </div>
   );
 

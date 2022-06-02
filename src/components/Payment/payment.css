@@ -1,0 +1,25 @@
+#container{
+    text-align: center;
+    position: relative;
+    height: 100%;
+
+}
+#CVV{
+    text-align: center;
+    position: relative;
+    width:50px;
+    fontSize:20px;
+}
+
+#submit{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}

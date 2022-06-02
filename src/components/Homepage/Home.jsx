@@ -6,6 +6,8 @@ import img3 from "./MovieImg/m3.jpeg"
 import img4 from "./MovieImg/m4.jpeg"
 import img5 from "./MovieImg/m5.jpeg"
 import img6 from "./MovieImg/m6.jpeg"
+import img7 from "./MovieImg/m7.jpeg"
+import img8 from "./MovieImg/m8.jpeg"
 
 const Home = () => {
   const [movies, setMovies] = useState([])
@@ -84,7 +86,25 @@ const Home = () => {
                 <figure class="gallery__item gallery__item--6">
                     <img src={img6} alt="Gallery image 6" class="gallery__img"/>
                     <p>
-                    <label htmlFor="movie_name">Movie (Data from DB)</label>
+                    <input type="submit" id="submit" value="Book Tickets"/>
+                    </p>
+                  
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                    <img src={img7} alt="Gallery image 7" class="gallery__img"/>
+                    <p>
+                    <div id="submit_wrapper">
+                            <input type="submit" id="submit" value="Book Tickets"/>
+                        </div>
+                    </p>
+                  
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                    <img src={img8} alt="Gallery image 8" class="gallery__img"/>
+                    <p>
+                    <div id="submit_wrapper">
+                            <input type="submit" id="submit" value="Book Tickets"/>
+                        </div>
                     </p>
                   
                 </figure>

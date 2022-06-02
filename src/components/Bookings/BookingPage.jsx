@@ -1,7 +1,6 @@
 import React , { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import './booking.css'
-import { useHistory } from 'react-router-dom';
 
 const Bookings=()=>{
     const [tickets_quantity, setTicketsquantity] = useState("");
@@ -22,9 +21,14 @@ const Bookings=()=>{
                             <label htmlFor="movie_name">Movie</label>
                             <select id="movie_name" name="movie_name" required autoFocus>
                                 <option>Select Movie</option>
-                                <option value="Movie 1">Thor</option>
-                                <option value="Movie 2">Black</option>
-                                <option value="Movie 3">83</option>
+                                <option value="Movie 1">Top Gun Maverick</option>
+                                <option value="Movie 2">Dob's Burgers Movie</option>
+                                <option value="Movie 3">Doctor Strange in the Multiverse Of Madness</option>
+                                <option value="Movie 4">Everything Everywhere All at once</option>
+                                <option value="Movie 5">The Bad Guys</option>
+                                <option value="Movie 6">Secrets of DumbleDore</option>
+                                <option value="Movie 7">Watcher</option>
+                                <option value="Movie 8">Sonic 2</option>
                             </select>
                         </p>
 

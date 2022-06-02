@@ -33,7 +33,7 @@ const Home = () => {
               
                 <figure class="gallery__item gallery__item--1">
                     <img src={img1} alt="Gallery image 1" class="gallery__img"/>
-                    <p id="test">{movies[0].movieName} IMDB {movies[0].movieRating}</p>
+                    <p id="test">{movies[0].movieName}</p>
                     <p id="test">IMDb {movies[0].movieRating}/10</p>
                     <p>
                     <div id="submit_wrapper">

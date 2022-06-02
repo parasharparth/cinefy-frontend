@@ -12,9 +12,9 @@ return (
           <div className="col-md-4 col-lg-4 col-sm-12">
             <div className="d-flex justify-content-center aboutmain">
               <div className="card-body">
-                <p>
+                {/* <p>
                   <b class = 'about-background'>CONTRIBUTORS</b>                  
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
@@ -68,6 +68,12 @@ return (
               </div>
             </div>
           </div>
+          <div className="sources">
+          Credits:
+          <a href="https://github.com/Kirtan6004">    Kirtan Patel      </a> ,{" "}
+          <a href="https://github.com/pragatipdx">    Pragati Rathore</a>    and
+          <a href="https://github.com/parasharparth">    Parth Parashar      </a>
+        </div>
         </div>
 
         

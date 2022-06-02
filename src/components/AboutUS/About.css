@@ -10,8 +10,6 @@ body{
 #About{
     text-align: center;
     position: relative;
-
-    height: 50;
     color: white;
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
@@ -27,4 +25,15 @@ body{
     content: "";
     clear: both;
     display: table;
+  }
+
+  .sources {
+    position: absolute;
+    bottom: 1px;
+    right: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 1rem;
   }

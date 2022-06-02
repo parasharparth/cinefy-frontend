@@ -1,7 +1,10 @@
-import React from "react"
+import React , { useState } from "react";
+import TextField from "@material-ui/core/TextField";
 import './booking.css'
 const Bookings=()=>{
-
+    const [tickets_quantity, setTicketsquantity] = useState("");
+    const [total_price, settotalprice] = useState(tickets_quantity*10);
+    
     return(
         <div id="container">
             <div id="form">
@@ -50,7 +53,16 @@ const Bookings=()=>{
                         <p>
                             <label>Total Price</label>
                             <span id="total_price">(enter data first)</span>
+                            <TextField
+                             value={total_price}
+                             label="Total Price"
+                        onChange={(e) => {
+                            settotalprice(e.target.value);
+        }}
+      />
+
                         </p>
+
                         <div id="submit_wrapper">
                             <input type="submit" id="submit" value="Book Tickets"/>
                         </div>

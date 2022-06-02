@@ -29,12 +29,7 @@ return (
                 <img src={pic3} id="image3" className="img-fluid" alt="Profilepicture" style={{height: "60em"}} />
                 </a>
               </div>
-              <div className="card-body">
-                {/* <h3>Kirtan Patel</h3> */}
-                  </div>
-              <div className="card-footer">
-                {/* <a href="https://github.com/Kirtan6004" className="card-link">GITHUB</a> */}
-              </div>
+
 
           </div>
           </div>
@@ -45,12 +40,7 @@ return (
                 <img src={pic2} id="image2" className="img-fluid" alt="Profilepicture" style={{height: "60em"}}/>
                 </a>
               </div>
-              <div className="card-body">
-                {/* <h3>Pragati Rathore</h3> */}
-              </div>
-              <div className="card-footer">
-                {/* <a href="https://github.com/pragatipdx" className="card-link">GITHUB</a> */}
-              </div>
+              
             </div>
           </div>
           <div classname="column">
@@ -60,20 +50,10 @@ return (
                 <img src={pic1} id="image1" className="img-fluid" alt="Profilepicture" style={{height: "60em" , width:""}} />
                 </a>
               </div>
-              <div className="card-body">
-                {/* <h3>Parth Parashar</h3> */}
-              </div>
-              <div className="card-footer">
-                {/* <a href="https://github.com/parasharparth" className="card-link">GITHUB</a> */}
-              </div>
+              
             </div>
           </div>
-          <div className="sources">
-          Credits:
-          <a href="https://github.com/Kirtan6004">    Kirtan Patel      </a> ,{" "}
-          <a href="https://github.com/pragatipdx">    Pragati Rathore</a>    and
-          <a href="https://github.com/parasharparth">    Parth Parashar      </a>
-        </div>
+          
         </div>
 
         

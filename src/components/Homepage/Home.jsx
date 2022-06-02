@@ -8,6 +8,7 @@ import img5 from "./MovieImg/m5.jpeg"
 import img6 from "./MovieImg/m6.jpeg"
 import img7 from "./MovieImg/m7.jpeg"
 import img8 from "./MovieImg/m8.jpeg"
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [movies, setMovies] = useState([])
@@ -21,6 +22,7 @@ const Home = () => {
         setMovies(data)
       })
   }
+  
 
   useEffect(() => {
     fetchData()
@@ -36,7 +38,15 @@ const Home = () => {
                     <img src={img1} alt="Gallery image 1" class="gallery__img"/>
                     <p>
                     <div id="submit_wrapper">
+                    <Link to="/bookings">
+                    <a
+                id="bookings"
+                class="active"
+                href="/bookings"
+                data-after="bookings">
                             <input type="submit" id="submit" value="Book Tickets"/>
+                            </a>
+                            </Link>
                         </div>
                     </p>
                   
@@ -45,7 +55,16 @@ const Home = () => {
                     <img src={img2} alt="Gallery image 2" class="gallery__img"/>
                     <p>
                     <div id="submit_wrapper">
+                    <Link to="/bookings">
+                    <a
+                id="bookings"
+                class="active"
+                href="/bookings"
+                data-after="bookings"
+              >
                             <input type="submit" id="submit" value="Book Tickets"/>
+                            </a>
+                            </Link>
                         </div>
                     </p>
                   
@@ -54,7 +73,16 @@ const Home = () => {
                     <img src={img3} alt="Gallery image 3" class="gallery__img"/>
                     <p>
                     <div id="submit_wrapper">
+                    <Link to="/bookings">
+                    <a
+                id="bookings"
+                class="active"
+                href="/bookings"
+                data-after="bookings"
+              >
                             <input type="submit" id="submit" value="Book Tickets"/>
+                            </a>
+                            </Link>
                         </div>
                     </p>
                   
@@ -63,7 +91,16 @@ const Home = () => {
                     <img src={img4} alt="Gallery image 4" class="gallery__img"/>
                     <p>
                     <div id="submit_wrapper">
+                    <Link to="/bookings">
+                    <a
+                id="bookings"
+                class="active"
+                href="/bookings"
+                data-after="bookings"
+              >
                             <input type="submit" id="submit" value="Book Tickets"/>
+                            </a>
+                            </Link>
                         </div>
                     </p>
                   
@@ -72,7 +109,16 @@ const Home = () => {
                     <img src={img5} alt="Gallery image 5" class="gallery__img"/>
                     <p>
                     <div id="submit_wrapper">
+                    <Link to="/bookings">
+                    <a
+                id="bookings"
+                class="active"
+                href="/bookings"
+                data-after="bookings"
+              >
                             <input type="submit" id="submit" value="Book Tickets"/>
+                            </a>
+                            </Link>
                         </div>
                     </p>
                   
@@ -88,7 +134,16 @@ const Home = () => {
                     <img src={img7} alt="Gallery image 7" class="gallery__img"/>
                     <p>
                     <div id="submit_wrapper">
+                    <Link to="/bookings">
+                    <a
+                id="bookings"
+                class="active"
+                href="/bookings"
+                data-after="bookings"
+              >
                             <input type="submit" id="submit" value="Book Tickets"/>
+                            </a>
+                            </Link>
                         </div>
                     </p>
                   
@@ -97,7 +152,16 @@ const Home = () => {
                     <img src={img8} alt="Gallery image 8" class="gallery__img"/>
                     <p>
                     <div id="submit_wrapper">
+                    <Link to="/bookings">
+                    <a
+                id="bookings"
+                class="active"
+                href="/bookings"
+                data-after="bookings"
+              >
                             <input type="submit" id="submit" value="Book Tickets"/>
+                            </a>
+                            </Link>
                         </div>
                     </p>
                   

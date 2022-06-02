@@ -1,10 +1,15 @@
 import React , { useState } from "react";
 import TextField from "@material-ui/core/TextField";
 import './booking.css'
+import { useHistory } from 'react-router-dom';
+
 const Bookings=()=>{
     const [tickets_quantity, setTicketsquantity] = useState("");
     const [total_price, settotalprice] = useState(tickets_quantity*10);
-    
+    const [movie_name, movienameoption] = useState("");
+    const [theaters_name, theaters] = useState("");
+    const [date_time, date] = useState("");
+
     return(
         <div id="container">
             <div id="form">

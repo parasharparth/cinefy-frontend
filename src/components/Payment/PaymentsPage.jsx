@@ -10,15 +10,7 @@ const Payment=()=>{
 
                         <legend>Payments_Page</legend>
 
-                        <p>
-                            <label htmlFor="movie_name">Movie</label>
-                            <select id="movie_name" name="movie_name" required autoFocus>
-                                <option></option>
-                                <option value="Movie 1">Thor</option>
-                                <option value="Movie 2">Black</option>
-                                <option value="Movie 3">83</option>
-                            </select>
-                        </p>
+                    
                         <p>
                             <div style={{background:'white',fontSize:'20px'}}>Your total is for $$</div>
                         </p>
@@ -56,7 +48,9 @@ const Payment=()=>{
                             <label style={{fontSize:'20px'}} htmlFor="Address">Address</label>
                             <input style={{fontSize:'20px',height:'100px'}} type="Address" name="Address" id="Address" required/>
                         </p>
-                            
+
+                        <div id="submit_wrapper">
+                            <input type="submit" id="submit" value="Confirm payment"/>
                         </div>
                     </fieldset>
                 </form>

@@ -128,3 +128,7 @@ label{
     cursor: pointer;
     border-radius: 16px;
 }
+
+#test{
+    color: aliceblue;
+}

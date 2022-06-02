@@ -50,7 +50,10 @@ const Bookings=()=>{
                         <p>
                             <label>Total Price</label>
                             <span id="total_price">(enter data first)</span>
+                            <input type="text" min="1" name="total_price" id="total_price"/>
+                            
                         </p>
+
                         <div id="submit_wrapper">
                             <input type="submit" id="submit" value="Book Tickets"/>
                         </div>

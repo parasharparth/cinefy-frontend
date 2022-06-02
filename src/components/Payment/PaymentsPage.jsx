@@ -56,6 +56,9 @@ const Payment=()=>{
                             <label style={{fontSize:'20px'}} htmlFor="Address">Address</label>
                             <input style={{fontSize:'20px',height:'100px'}} type="Address" name="Address" id="Address" required/>
                         </p>
+                            <div id="submit_wrapper">
+                            <input type="submit" id="submit" value="Confirm payment"/>
+                        </div>
                     </fieldset>
                 </form>
             </div>

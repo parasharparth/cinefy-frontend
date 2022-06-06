@@ -1,74 +1,113 @@
-import React , { useState } from "react";
+import React, {useContext, useState} from "react";
 import TextField from "@material-ui/core/TextField";
 import './booking.css'
+import {MovieContext} from "../../App";
+import { useHistory } from "react-router-dom";
 
 const Bookings=()=>{
-    const [tickets_quantity, setTicketsquantity] = useState("");
-    const [total_price, settotalprice] = useState(tickets_quantity*10);
-    const [movie_name, movienameoption] = useState("");
-    const [theaters_name, theaters] = useState("");
-    const [date_time, date] = useState("");
+    const [tickets_quantity, setTicketsQuantity] = useState(0);
+    const [total_price, setTotalPrice] = useState(tickets_quantity*10);
+    const [movie_name, setMovieName] = useState("");
+    const [theaters_name, setTheatre] = useState("");
+    const [date_time, setDate] = useState("");
+    const [Time, setTime] = useState("");
+    const [email, setEmail] = useState("");
+    let history = useHistory();
+    const movie = useContext(MovieContext);
+    const handleSelectMovie = (e) => {
+        console.log(e.target.value);
+        setMovieName(e.target.value);
+    }
 
+    const handleTheatre = (e) => {
+        setTheatre(e.target.value);
+    }
+
+    const handleDate = (e) => {
+        setDate(e.target.value);
+    }
+    const handleTime = (e) => {
+        setTime(e.target.value);
+    }
+
+    const handleEmail = (e) => {
+        setEmail(e.target.value);
+    }
+
+    const handleTickets = (e) => {
+        setTicketsQuantity(e.target.value);
+        setTotalPrice(e.target.value * 10);
+    }
+    const handleBooking = (e) => {
+        e.preventDefault();
+        console.log(movie.booking);
+        movie.handleBooking({movie: movie_name, theatre: theaters_name, date: date_time,time: Time ,tickets: tickets_quantity, price: total_price})
+        history.push('/payment');
+    }
     return(
         <div id="container">
             <div id="form">
-                <form id="book_tickets">
+                <form id="book_tickets" onSubmit={handleBooking}>
                     <fieldset>
 
                         <legend>Booking Details</legend>
 
                         <p>
                             <label htmlFor="movie_name">Movie</label>
-                            <select id="movie_name" name="movie_name" required autoFocus>
+                            <select id="movie_name" name="movie_name" required autoFocus onChange={handleSelectMovie}>
                                 <option>Select Movie</option>
-                                <option value="Movie 1">Top Gun Maverick</option>
-                                <option value="Movie 2">Dob's Burgers Movie</option>
-                                <option value="Movie 3">Doctor Strange in the Multiverse Of Madness</option>
-                                <option value="Movie 4">Everything Everywhere All at once</option>
-                                <option value="Movie 5">The Bad Guys</option>
-                                <option value="Movie 6">Secrets of DumbleDore</option>
-                                <option value="Movie 7">Watcher</option>
-                                <option value="Movie 8">Sonic 2</option>
+                                <option value="Top Gun Maverick">Top Gun Maverick</option>
+                                <option value="The Bob's Burgers Movie">The Bob's Burgers Movie</option>
+                                <option value="Doctor Strange in the Multiverse Of Madness">Doctor Strange in the Multiverse Of Madness</option>
+                                <option value="Everything Everywhere All at once">Everything Everywhere All at once</option>
+                                <option value="The Bad Guys">The Bad Guys</option>
+                                <option value="Secrets of DumbleDore">Secrets of DumbleDore</option>
+                                <option value="Watcher">Watcher</option>
+                                <option value="Sonic 2">Sonic 2</option>
                             </select>
                         </p>
 
                         <p>
                             <label htmlFor="theaters">Theaters</label>
-                            <select id="theaters" required>
+                            <select id="theaters" required onChange={handleTheatre}>
                                 <option>Select Theatre</option>
-                                <option value="Theater 1">Cinemax Cedar Hills</option>
-                                <option value="Theater 2">AMC Progressive ridge</option>
-                                <option value="Theater 3">Regal theatre Pioneer square</option>
+                                <option value="Cinemax Cedar Hills">Cinemax Cedar Hills</option>
+                                <option value="AMC Progressive ridge">AMC Progressive ridge</option>
+                                <option value="Regal theatre Pioneer square">Regal theatre Pioneer square</option>
                             </select>
                         </p>
 
                         <p>
                             <label htmlFor="date">Date<br/><span
-                                id="dateNote"> 
+                                id="dateNote">
                                 <a href="https://support.mozilla.org/en-US/questions/986096"></a></span></label>
-                            <input type="date" name="date" id="date" min="today" required/>
+                            <input type="date" name="date" id="date" min="today" onChange={handleDate} required/>
+                        </p>
+
+                        <p>
+                            <label htmlFor="Time">Time</label>
+                            <select id="Time" required onChange={handleTime}>
+                                <option>Select Time</option>
+                                <option value="15:00">15:00</option>
+                                <option value="19:00">19:00</option>
+                                <option value="21:00">21:00</option>
+                            </select>
                         </p>
 
                         <p>
                             <label htmlFor="email">Email</label>
-                            <input type="email" name="email" id="email" required/>
+                            <input type="email" name="email" id="email" onChange={handleEmail} required/>
                         </p>
 
                         <p>
                             <label htmlFor="tickets_quantity"># Tickets</label>
-                            <input type="number" min="1" name="tickets_quantity" id="tickets_quantity" required/>
+                            <input type="number" min="1" name="tickets_quantity" id="tickets_quantity" onChange={handleTickets} required/>
                         </p>
 
                         <p>
                             <label>Total Price</label>
-                            <span id="total_price">(enter data first)</span>
-                            <TextField
-                             value={total_price}
-                             label="Total Price"
-                        onChange={(e) => {
-                            settotalprice(e.target.value);
-        }}
-      />
+                            <input type="number" disabled value={total_price}/>
+
 
                         </p>
 
@@ -78,13 +117,6 @@ const Bookings=()=>{
                     </fieldset>
                 </form>
                 <p id="perTicketPrice">Per ticket price = $10</p>
-                {/* <p id="discount">
-                    <span id="disount_title">Discounts:</span>
-                    <ul>
-                        <li>5% discount if show is on weekday</li>
-                        <li>10% discount if number of tickets >= 10</li>
-                    </ul>
-                </p> */}
             </div>
         </div>
     );

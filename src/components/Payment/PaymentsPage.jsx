@@ -1,6 +1,9 @@
-import React from "react"
+import React, {useEffect, useContext} from "react"
+import {MovieContext} from "../../App";
+
 import './payment.css'
 const Payment=()=>{
+    const movie = useContext(MovieContext);
 
     return(
         <div id="container">
@@ -9,10 +12,25 @@ const Payment=()=>{
                     <fieldset>
 
                         <legend>Payments_Page</legend>
-
-                    
+                        <h2 style={{color: "white"}}>Your movie details:</h2>
                         <p>
-                            <div style={{background:'black',fontSize:'20px', color:'white'}}>Total amount is: 10$</div>
+                            <div style={{background:'black',fontSize:'20px', color:'white'}}>Movie Name: {movie.booking.movie}</div>
+                        </p>
+                        <p>
+                            <div style={{background:'black',fontSize:'20px', color:'white'}}>Theatre Name: {movie.booking.theatre}</div>
+                        </p>
+                        <p>
+                            <div style={{background:'black',fontSize:'20px', color:'white'}}>Date: {movie.booking.date}</div>
+                        </p>
+                        <p>
+                            <div style={{background:'black',fontSize:'20px', color:'white'}}>Time: {movie.booking.time}</div>
+                        </p>
+                        <p>
+                            <div style={{background:'black',fontSize:'20px', color:'white'}}>No. of Tickets: {movie.booking.tickets}</div>
+                        </p>
+
+                        <p>
+                            <div style={{background:'black',fontSize:'20px', color:'white'}}>Total amount is: {movie.booking.price}$</div>
                         </p>
                         <p>
                             <div style={{background:'grey',fontSize:'20px', color:'white'}}>Payment options</div>
